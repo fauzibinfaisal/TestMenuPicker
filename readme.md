@@ -12,7 +12,7 @@ Ada dua cara yang saya tunjukan pada project ini:
 biasanya saya buat style button dibuat kelasnya sendiri-sendiri tergantung guideline style-nya.
 
 ## 3. Utils
-ininya extension, Constants, Helper yang generally digunakan dalam banyak kelas.
+Berisikan kumpulan extension, Constants, Helper yang generally digunakan dalam banyak kelas.
 
 Yang lain sedang proses...
 
