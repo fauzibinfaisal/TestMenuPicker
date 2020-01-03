@@ -14,18 +14,18 @@ class MenuCollectionView: UICollectionView {
   
   override func layoutSubviews() {
     super.layoutSubviews()
-    if !__CGSizeEqualToSize(bounds.size, self.intrinsicContentSize) {
-      
-      if self.intrinsicContentSize.height > frame.size.height {
-        self.invalidateIntrinsicContentSize()
-      }
-      if isDynamicSizeRequired {
-        self.invalidateIntrinsicContentSize()
-      }
-    }
+//    if !__CGSizeEqualToSize(bounds.size, self.intrinsicContentSize) {
+//      
+//      if self.intrinsicContentSize.height > frame.size.height {
+//        self.invalidateIntrinsicContentSize()
+//      }
+//      if isDynamicSizeRequired {
+//        self.invalidateIntrinsicContentSize()
+//      }
+//    }
   }
   
-  override var intrinsicContentSize: CGSize {
-    return contentSize
-  }
+//  override var intrinsicContentSize: CGSize {
+//    return contentSize
+//  }
 }

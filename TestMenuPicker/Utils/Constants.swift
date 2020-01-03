@@ -12,6 +12,10 @@ import Foundation
 struct K {
     struct String {
         static let toNextSegue = "toNextSegue"
+        static let detailCell = "detailCell"
+        static let menuCell = "menuCell"
+        static let doneTableViewCell = "DoneTableViewCell"
+
 
     }
     

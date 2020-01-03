@@ -13,18 +13,18 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="TestMenuPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLb-Md-r7d">
-                                <rect key="frame" x="15" y="35" width="290" height="765"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLb-Md-r7d">
+                                <rect key="frame" x="15" y="35" width="290" height="931"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" rowHeight="200" id="W9V-Ut-hcu" customClass="DetailTableViewCell" customModule="TestMenuPicker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="290" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" rowHeight="160" id="W9V-Ut-hcu" customClass="DetailTableViewCell" customModule="TestMenuPicker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="290" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9V-Ut-hcu" id="8lz-ak-Bcl">
-                                            <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your Favorite Menu at Mujigae" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V89-qm-zcZ">
@@ -50,17 +50,17 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" rowHeight="300" id="TMN-oI-vxF" customClass="MenuTableViewCell" customModule="TestMenuPicker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="228" width="290" height="300"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" rowHeight="720" id="TMN-oI-vxF" customClass="MenuTableViewCell" customModule="TestMenuPicker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="188" width="290" height="720"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TMN-oI-vxF" id="Mts-Mp-9GN">
-                                            <rect key="frame" x="0.0" y="0.0" width="290" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="720"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="412-81-WPV" customClass="MenuCollectionView" customModule="TestMenuPicker" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="300"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="690"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yrb-m4-uDc">
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="8" minimumInteritemSpacing="8" id="yrb-m4-uDc">
                                                         <size key="itemSize" width="119" height="30"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -94,7 +94,7 @@
                                                             </connections>
                                                         </collectionViewCell>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9vd-GF-XiU">
-                                                            <rect key="frame" x="129" y="0.0" width="119" height="50"/>
+                                                            <rect key="frame" x="127" y="0.0" width="119" height="50"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SbI-Mq-8GP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="119" height="50"/>
@@ -106,7 +106,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="412-81-WPV" secondAttribute="trailing" id="MJZ-lt-4je"/>
-                                                <constraint firstAttribute="bottom" secondItem="412-81-WPV" secondAttribute="bottom" id="WcT-6m-kwT"/>
+                                                <constraint firstAttribute="bottom" secondItem="412-81-WPV" secondAttribute="bottom" constant="30" id="WcT-6m-kwT"/>
                                                 <constraint firstItem="412-81-WPV" firstAttribute="leading" secondItem="Mts-Mp-9GN" secondAttribute="leading" id="XQF-AE-43n"/>
                                                 <constraint firstItem="412-81-WPV" firstAttribute="top" secondItem="Mts-Mp-9GN" secondAttribute="top" id="rvX-2K-dIz"/>
                                             </constraints>
@@ -131,7 +131,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <size key="freeformSize" width="320" height="800"/>
+                    <size key="freeformSize" width="320" height="1000"/>
                     <connections>
                         <outlet property="tabelView" destination="yLb-Md-r7d" id="FV7-bp-eKg"/>
                         <segue destination="vbd-lf-gRL" kind="modal" identifier="toNextSegue" id="cEC-4Y-XW5"/>

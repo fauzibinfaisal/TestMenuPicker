@@ -18,7 +18,10 @@ class ViewController: UIViewController {
         
         menuList = Menu.fetch()
         
-        self.tabelView.register(UINib.init(nibName: "DoneTableViewCell", bundle: nil), forCellReuseIdentifier:"DoneTableViewCell")
+        tabelView.register(UINib.init(nibName: "DoneTableViewCell", bundle: nil), forCellReuseIdentifier:"DoneTableViewCell")
+        
+        tabelView.rowHeight = UITableView.automaticDimension
+        tabelView.estimatedRowHeight = 600
 
     }
     
@@ -58,21 +61,19 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        tableView.rowHeight = UITableView.automaticDimension
-//        tableView.estimatedRowHeight = 600
-        
+
         switch indexPath.row {
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.String.detailCell) as! DetailTableViewCell
             return cell.bounds.height
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! MenuTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.String.menuCell) as! MenuTableViewCell
             return cell.bounds.height
 
         default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "DoneTableViewCell") as! DoneTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: K.String.doneTableViewCell) as! DoneTableViewCell
             return cell.bounds.height
-            
+
         }
     }
 }
@@ -80,7 +81,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
 extension ViewController: MenuTableViewCellDelegate{
     func didSelectedMenu(menu: Menu) {
         if let tempMenu = menuList.first(where: {$0.id == menu.id}) {
-            print("selected \(menu.title) \(menu.selected)")
+//            print("selected \(menu.title) \(menu.selected)")
             if tempMenu.selected {
                 menuList.filter {$0.id == menu.id}.first?.selected = false
             } else {
@@ -95,7 +96,7 @@ extension ViewController: MenuTableViewCellDelegate{
 
 extension ViewController: DoneDelegate{
     func didDoneTapped() {
-        performSegue(withIdentifier: "toNextSegue", sender: self)
+        performSegue(withIdentifier: K.String.toNextSegue, sender: self)
     }
 }
 

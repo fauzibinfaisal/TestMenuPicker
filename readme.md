@@ -15,3 +15,5 @@ biasanya saya buat style button dibaut kelasnya sendiri2
 ininya extension, Constants, Helper yang generally digunakan dalam banyak kelas.
 
 Yang lain sedang proses...
+
+Secara fungsi udah sesuai permintaan. Tapi secara design masih perlu disesuaikan karena keterbatasan waktu.
