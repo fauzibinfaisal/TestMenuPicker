@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0AB36123BEA5B0000DE9B1 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AB36023BEA5B0000DE9B1 /* Menu.swift */; };
+		EB0AB36323BEA780000DE9B1 /* MenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AB36223BEA780000DE9B1 /* MenuCollectionView.swift */; };
+		EB26A33C23BEDB9100D95EF5 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26A33B23BEDB9100D95EF5 /* NextViewController.swift */; };
+		EB26A33E23BEDE9100D95EF5 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EB26A33D23BEDE9100D95EF5 /* readme.md */; };
+		EB44CD9E23BDC88B00201FA5 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44CD9D23BDC88B00201FA5 /* DetailTableViewCell.swift */; };
+		EB44CDA023BDC89F00201FA5 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44CD9F23BDC89F00201FA5 /* MenuTableViewCell.swift */; };
+		EB44CDA323BDC8E600201FA5 /* DoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44CDA123BDC8E600201FA5 /* DoneTableViewCell.swift */; };
+		EB44CDA423BDC8E600201FA5 /* DoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB44CDA223BDC8E600201FA5 /* DoneTableViewCell.xib */; };
+		EB44CDA623BDCB1800201FA5 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44CDA523BDCB1800201FA5 /* DoneButton.swift */; };
+		EB44CDA823BDED6E00201FA5 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44CDA723BDED6E00201FA5 /* MenuCollectionViewCell.swift */; };
 		EBFC0C6E23BDA17100023212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC0C6D23BDA17100023212 /* AppDelegate.swift */; };
 		EBFC0C7023BDA17100023212 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC0C6F23BDA17100023212 /* SceneDelegate.swift */; };
 		EBFC0C7223BDA17100023212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC0C7123BDA17100023212 /* ViewController.swift */; };
@@ -14,9 +24,21 @@
 		EBFC0C7723BDA17500023212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFC0C7623BDA17500023212 /* Assets.xcassets */; };
 		EBFC0C7A23BDA17500023212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFC0C7823BDA17500023212 /* LaunchScreen.storyboard */; };
 		EBFC0C8223BDA1EF00023212 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EBFC0C8123BDA1EF00023212 /* .gitignore */; };
+		EBFC0C8423BDA3C600023212 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC0C8323BDA3C600023212 /* Constants.swift */; };
+		EBFC0C8723BDA4AB00023212 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC0C8623BDA4AB00023212 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB0AB36023BEA5B0000DE9B1 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		EB0AB36223BEA780000DE9B1 /* MenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionView.swift; sourceTree = "<group>"; };
+		EB26A33B23BEDB9100D95EF5 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		EB26A33D23BEDE9100D95EF5 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		EB44CD9D23BDC88B00201FA5 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		EB44CD9F23BDC89F00201FA5 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		EB44CDA123BDC8E600201FA5 /* DoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTableViewCell.swift; sourceTree = "<group>"; };
+		EB44CDA223BDC8E600201FA5 /* DoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneTableViewCell.xib; sourceTree = "<group>"; };
+		EB44CDA523BDCB1800201FA5 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
+		EB44CDA723BDED6E00201FA5 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		EBFC0C6A23BDA17100023212 /* TestMenuPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMenuPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFC0C6D23BDA17100023212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFC0C6F23BDA17100023212 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +48,8 @@
 		EBFC0C7923BDA17500023212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBFC0C7B23BDA17500023212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFC0C8123BDA1EF00023212 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EBFC0C8323BDA3C600023212 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EBFC0C8623BDA4AB00023212 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +63,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB26A33A23BED1F400D95EF5 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				EB44CDA523BDCB1800201FA5 /* DoneButton.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		EB26A33F23BEEDF800D95EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB0AB36023BEA5B0000DE9B1 /* Menu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB26A34023BEEE0300D95EF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC0C7123BDA17100023212 /* ViewController.swift */,
+				EB26A33B23BEDB9100D95EF5 /* NextViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB26A34123BEEE1200D95EF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC0C7323BDA17100023212 /* Main.storyboard */,
+				EB44CD9D23BDC88B00201FA5 /* DetailTableViewCell.swift */,
+				EB44CD9F23BDC89F00201FA5 /* MenuTableViewCell.swift */,
+				EB0AB36223BEA780000DE9B1 /* MenuCollectionView.swift */,
+				EB44CDA723BDED6E00201FA5 /* MenuCollectionViewCell.swift */,
+				EB44CDA123BDC8E600201FA5 /* DoneTableViewCell.swift */,
+				EB44CDA223BDC8E600201FA5 /* DoneTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EBFC0C6123BDA17100023212 = {
 			isa = PBXGroup;
 			children = (
+				EB26A33D23BEDE9100D95EF5 /* readme.md */,
 				EBFC0C8123BDA1EF00023212 /* .gitignore */,
 				EBFC0C6C23BDA17100023212 /* TestMenuPicker */,
 				EBFC0C6B23BDA17100023212 /* Products */,
@@ -59,15 +123,27 @@
 		EBFC0C6C23BDA17100023212 /* TestMenuPicker */ = {
 			isa = PBXGroup;
 			children = (
+				EB26A33F23BEEDF800D95EF5 /* Model */,
+				EB26A34123BEEE1200D95EF5 /* View */,
+				EB26A34023BEEE0300D95EF5 /* Controller */,
+				EB26A33A23BED1F400D95EF5 /* Styles */,
+				EBFC0C8523BDA49500023212 /* Utils */,
 				EBFC0C6D23BDA17100023212 /* AppDelegate.swift */,
 				EBFC0C6F23BDA17100023212 /* SceneDelegate.swift */,
-				EBFC0C7123BDA17100023212 /* ViewController.swift */,
-				EBFC0C7323BDA17100023212 /* Main.storyboard */,
 				EBFC0C7623BDA17500023212 /* Assets.xcassets */,
 				EBFC0C7823BDA17500023212 /* LaunchScreen.storyboard */,
 				EBFC0C7B23BDA17500023212 /* Info.plist */,
 			);
 			path = TestMenuPicker;
+			sourceTree = "<group>";
+		};
+		EBFC0C8523BDA49500023212 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC0C8323BDA3C600023212 /* Constants.swift */,
+				EBFC0C8623BDA4AB00023212 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +207,8 @@
 				EBFC0C8223BDA1EF00023212 /* .gitignore in Resources */,
 				EBFC0C7A23BDA17500023212 /* LaunchScreen.storyboard in Resources */,
 				EBFC0C7723BDA17500023212 /* Assets.xcassets in Resources */,
+				EB44CDA423BDC8E600201FA5 /* DoneTableViewCell.xib in Resources */,
+				EB26A33E23BEDE9100D95EF5 /* readme.md in Resources */,
 				EBFC0C7523BDA17100023212 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +220,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB44CD9E23BDC88B00201FA5 /* DetailTableViewCell.swift in Sources */,
+				EBFC0C8723BDA4AB00023212 /* Extensions.swift in Sources */,
+				EB44CDA623BDCB1800201FA5 /* DoneButton.swift in Sources */,
+				EB44CDA023BDC89F00201FA5 /* MenuTableViewCell.swift in Sources */,
+				EB44CDA323BDC8E600201FA5 /* DoneTableViewCell.swift in Sources */,
+				EB0AB36123BEA5B0000DE9B1 /* Menu.swift in Sources */,
+				EB26A33C23BEDB9100D95EF5 /* NextViewController.swift in Sources */,
 				EBFC0C7223BDA17100023212 /* ViewController.swift in Sources */,
+				EB0AB36323BEA780000DE9B1 /* MenuCollectionView.swift in Sources */,
 				EBFC0C6E23BDA17100023212 /* AppDelegate.swift in Sources */,
 				EBFC0C7023BDA17100023212 /* SceneDelegate.swift in Sources */,
+				EBFC0C8423BDA3C600023212 /* Constants.swift in Sources */,
+				EB44CDA823BDED6E00201FA5 /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="TestMenuPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLb-Md-r7d">
+                                <rect key="frame" x="15" y="35" width="290" height="765"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailCell" rowHeight="200" id="W9V-Ut-hcu" customClass="DetailTableViewCell" customModule="TestMenuPicker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="290" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9V-Ut-hcu" id="8lz-ak-Bcl">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your Favorite Menu at Mujigae" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V89-qm-zcZ">
+                                                    <rect key="frame" x="0.0" y="35" width="290" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                    <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick 3 or more category of menu you are currently looking (you can change them anytime)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ou-Pj-tb3">
+                                                    <rect key="frame" x="0.0" y="105.5" width="290" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="V89-qm-zcZ" secondAttribute="trailing" id="3es-rh-TVr"/>
+                                                <constraint firstAttribute="trailing" secondItem="2ou-Pj-tb3" secondAttribute="trailing" id="JFA-tW-85U"/>
+                                                <constraint firstItem="V89-qm-zcZ" firstAttribute="leading" secondItem="8lz-ak-Bcl" secondAttribute="leading" id="LTD-CO-BPl"/>
+                                                <constraint firstItem="2ou-Pj-tb3" firstAttribute="leading" secondItem="8lz-ak-Bcl" secondAttribute="leading" id="XPg-Y3-lgY"/>
+                                                <constraint firstItem="V89-qm-zcZ" firstAttribute="top" secondItem="8lz-ak-Bcl" secondAttribute="top" constant="35" id="lma-El-Lro"/>
+                                                <constraint firstItem="2ou-Pj-tb3" firstAttribute="top" secondItem="V89-qm-zcZ" secondAttribute="bottom" constant="20" id="pNW-N0-VLg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" rowHeight="300" id="TMN-oI-vxF" customClass="MenuTableViewCell" customModule="TestMenuPicker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="290" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TMN-oI-vxF" id="Mts-Mp-9GN">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="412-81-WPV" customClass="MenuCollectionView" customModule="TestMenuPicker" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="300"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yrb-m4-uDc">
+                                                        <size key="itemSize" width="119" height="30"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCollectionViewCell" id="QrE-py-UJ7" customClass="MenuCollectionViewCell" customModule="TestMenuPicker" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="10" width="119" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3xz-yz-Rne">
+                                                                <rect key="frame" x="0.0" y="0.0" width="119" height="30"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qm-lS-Bqg">
+                                                                        <rect key="frame" x="16" y="0.0" width="87" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" red="0.92156862750000001" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="6Qm-lS-Bqg" firstAttribute="leading" secondItem="3xz-yz-Rne" secondAttribute="leading" constant="16" id="3kH-t1-ngp"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="6Qm-lS-Bqg" secondAttribute="trailing" constant="16" id="aDt-aN-wbi"/>
+                                                                    <constraint firstItem="6Qm-lS-Bqg" firstAttribute="top" secondItem="3xz-yz-Rne" secondAttribute="top" id="eJy-f0-ozG"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="6Qm-lS-Bqg" secondAttribute="bottom" id="hdz-wC-rxw"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="119" height="30"/>
+                                                            <connections>
+                                                                <outlet property="menuLabel" destination="6Qm-lS-Bqg" id="IUq-a2-hpt"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9vd-GF-XiU">
+                                                            <rect key="frame" x="129" y="0.0" width="119" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SbI-Mq-8GP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="119" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </collectionViewCellContentView>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="412-81-WPV" secondAttribute="trailing" id="MJZ-lt-4je"/>
+                                                <constraint firstAttribute="bottom" secondItem="412-81-WPV" secondAttribute="bottom" id="WcT-6m-kwT"/>
+                                                <constraint firstItem="412-81-WPV" firstAttribute="leading" secondItem="Mts-Mp-9GN" secondAttribute="leading" id="XQF-AE-43n"/>
+                                                <constraint firstItem="412-81-WPV" firstAttribute="top" secondItem="Mts-Mp-9GN" secondAttribute="top" id="rvX-2K-dIz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="412-81-WPV" id="082-lv-1SP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5RJ-Nj-dH2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="P0s-u0-dQt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yLb-Md-r7d" secondAttribute="bottom" id="JOs-r4-wvi"/>
+                            <constraint firstItem="yLb-Md-r7d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="OS2-cd-YzS"/>
+                            <constraint firstItem="yLb-Md-r7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="yFq-rE-Deq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yLb-Md-r7d" secondAttribute="trailing" constant="15" id="zwc-fj-a1K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="800"/>
+                    <connections>
+                        <outlet property="tabelView" destination="yLb-Md-r7d" id="FV7-bp-eKg"/>
+                        <segue destination="vbd-lf-gRL" kind="modal" identifier="toNextSegue" id="cEC-4Y-XW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="meT-mQ-jDT">
+            <objects>
+                <viewController storyboardIdentifier="NextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vbd-lf-gRL" customClass="NextViewController" customModule="TestMenuPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FVM-k4-xq2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rsS-iX-4eO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZ2-gp-05M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="151"/>
+        </scene>
+    </scenes>
+</document>
