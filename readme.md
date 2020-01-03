@@ -9,7 +9,7 @@ Ada dua cara yang saya tunjukan pada project ini:
  
 
 ## 2. Ada folder styles
-biasanya saya buat style button dibaut kelasnya sendiri2
+biasanya saya buat style button dibuat kelasnya sendiri-sendiri tergantung guideline style-nya.
 
 ## 3. Utils
 ininya extension, Constants, Helper yang generally digunakan dalam banyak kelas.
